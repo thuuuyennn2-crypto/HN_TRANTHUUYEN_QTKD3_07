@@ -1,19 +1,19 @@
 CREATE DATABASE LibraryManagement;
 USE LibraryManagement;
-create table Books (
+CREATE TABLE Books (
 BookId VARCHAR(10)PRIMARY KEY,
 Title VARCHAR(100) NOT NULL, 
 Author VARCHAR(100),
 Price DECIMAL(10, 2),
 Quantity INT
 );
-create table Readers (
+CREATE TABLE Readers (
 ReaderId VARCHAR(10) PRIMARY KEY, 
 ReaderName VARCHAR(100) NOT NULL,
 PhoneNumber VARCHAR(15) UNIQUE, 
 Address VARCHAR(255)
 );
-create table BorrowRecords (
+CREATE TABLE BorrowRecords (
 Readerid VARCHAR(10) , 
 BookId VARCHAR(10), 
 BorrowDate DATE,
